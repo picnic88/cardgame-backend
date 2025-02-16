@@ -26,7 +26,7 @@ $factory = (new Factory) // Firebase Factory 인스턴스 생성 (Firebase 프�
 //     case '/api/users':
 //         $controller = new UserController($realtimeDatabase);
 //         switch ($method) {
-//             case 'GET':
+//             case 'GET': 0
 //                 $response = $controller->getUsers();
 //                 break;
 //             case 'POST':
