@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>게임 화면</title>
+    <link rel="stylesheet" href="GameScreen.css">
+    <link rel="stylesheet" href="Timer.css">
+    <link rel="stylesheet" href="GameWrapper.css">
+</head>
+
+<body>
+    <div class="round" id="roundBox">
+        <span id="roundText">테스트</span>
+    </div>
+    <div class="container">
+
+        <!-- 상단 컨테이너 -->
+        <div class="top-container">
+            <button class="back-button" onclick="history.back()">◀ 메인 화면</button>
+            <div class="score-board">
+                <form method="post" action="score.php">
+                    <span>랭킹 - 점수</span> <span name="score" id="score">9999</span>
+                </form>
+            </div>
+            <!-- 원형 프로그레시브 타이머 -->
+            <div class="timer-container">
+                <div id="timer" class="timer">
+                    <div id="timerDisplay">타이머</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 게임 영역 -->
+        <div class="game-wrapper">
+            <!-- 카드 컨테이너 -->
+            <div class="flip"></div>
+
+            <!-- 아이템 슬롯 컨테이너 -->
+            <div class="item-container">
+                <div class="item-text">아이템</div>
+                <div class="items" id="items"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="GameScreen.js"></script>
+</body>
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const score = document.getElementById("score");
+
+        const n = new MutationObserver(()=> {
+            const scoreValue = score.innerText.trim();
+            localStorage.setItem("score", scoreValue);
+            console.log(`점수 저장 완료: ${scoreValue}`);
+        });
+
+        n.observe(score, {childList: true, characterData: true, subtree: true});
+
+        const savedScore = localStorage.getItem("score");
+        if(savedScore) {
+            score.innerText = savedScore;
+            console.log('저장된 점수 불러옴: ${savedScore}');
+        }
+    });
+
+        
+
+</script> -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scoreElement = document.getElementById("score");
+    let nickname = localStorage.getItem("id") || "guest"; // 닉네임 가져오기 (없으면 guest)
+
+
+    // 점수 변경 감지
+    const observer = new MutationObserver(() => {
+        const scoreValue = scoreElement.innerText.trim();
+        localStorage.setItem("score", scoreValue);
+        console.log(`점수 저장 완료: ${scoreValue}`);
+
+        // 서버로 점수 업데이트 요청
+        updateScoreOnServer(scoreValue, nickname);
+    });
+
+    observer.observe(scoreElement, { childList: true, characterData: true, subtree: true });
+});
+
+// 서버에 점수 업데이트 요청
+function updateScoreOnServer(score, nickname) {
+    fetch('score.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `score=${score}&nickname=${nickname}`
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(`✅서버 응답: ${data}`);
+    })
+    .catch(error => {
+        console.error('❌점수 업데이트 실패:', error);
+    });
+}
+
+</script>
+
+</html>

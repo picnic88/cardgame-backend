@@ -1,0 +1,1006 @@
+@charset "UTF-8";
+
+
+
+    h2{font-family: 'IBMPlexSans'; font-size:2.5rem;}
+h3{font-family: 'Interop'; font-size:2rem;}
+h3 > .introduce1, .introduce2 { font-size : 1.5rem;}
+.c, .img1, .img2, .img3, .img4, .img5 { 
+    border-radius: 20px;
+}
+a {
+    text-decoration:none;
+    color : black;
+}
+body {
+    width : 100%;
+    height : 100vh;
+    font-family: "interop";
+    src : url('img/image(1)/02.jpg'),
+    format('truetype');
+    font-weight: normal;
+}
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+a {
+    text-decoration:none;
+    color : black;
+}
+img {
+    border-radius: 20px;
+    width : 100px;
+    height : 100px;
+}
+body {
+    width : 100%;
+    height : 100vh;
+    font-family: "interop";
+    src : url('img/image(1)/02.jpg')
+    format('truetype');
+    font-weight: normal;
+}
+.introduce1 {
+    width: 100%;
+    font-size: 10px;
+}
+.calender {
+    width : 28px;
+    height : 36px;
+}
+/* //GNB */
+/* --------------header-content --------------*/
+.header-content{
+    width:100%;
+    text-align: center;
+    padding: 7rem 0;
+    background-color: lightgray;
+    background-image:url("../img/example.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    z-index: 1;
+    position:relative;
+    font-family: 'Interop';
+    font-size:2rem;
+}
+.header-content::after{
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    opacity:0.6;
+    inset: 0;
+    z-index:-1;
+}
+.main_Picture{
+    width : 100%;
+    height : 870px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin-top : 40px;
+/* //952        82 */
+}
+.count {
+    max-width : 100%;
+    display : block;
+    margin : auto;
+}
+.count img {
+    width : 100%;
+    height : 100%;
+    object-fit : cover;
+}
+.count div {
+    display : inline-block;
+    width : 100%;
+}
+
+.count .slick-slide { 
+    height: 500px; /* 슬라이드 높이를 설정 */ 
+} 
+.count .slick-slide div { 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+}
+.slick-dots {
+    bottom : 30px !important;
+    text-align: center !important;
+}
+.slick-dots li button:before {
+    font-size : 20px !important;
+    color : white !important;
+    opacity : 0.75 !important
+}
+.slick-dots li.slick-active button:before {
+    color : #FFE500 !important;
+    opacity: 1 !important;
+}
+.slick-dots li {
+    margin : 0 5px !important;
+}
+.main_Picture .slick-slide { 
+    width : 100%;
+    height: 870px; /* 슬라이드 높이를 설정 */ 
+}
+.main_Picture > img .slick-slide div { 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+}
+.circleDom {
+    width : 192px;
+    height : 20px;
+    position : absolute;
+    left : 50%;
+    margin-left : -87px;
+    margin-top : 820px;
+    display: flex;
+    justify-content : space-between;
+}
+.circle {
+    
+    width : 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    
+}
+.circle1 {
+background-color: #FFE500;
+}
+
+.mainText {
+    width : 50%;
+    height : 954px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position : absolute;
+}
+.mainFont1 {
+    top : 340px;
+    left : 100px;
+    font-size: 6rem;
+    color : white;
+    position : absolute;
+}
+.mainFont2 {
+    top : 440px;
+    left : 100px;
+    font-size: 6rem;
+    color : white;
+    position : absolute;
+}
+.mainFont3 {
+    top : 550px;
+    left : 100px;
+    font-size : 1.5rem;
+    color : white;
+    position : absolute;
+}
+/*--------------introduce1--------------*/
+.introduce1 {
+    height : 663px;
+    background-color: #F8F6F6;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin-top : 0px;
+}
+.introduce1_1 {
+    margin-bottom : 10px;
+    font-size: 1.8rem;
+}
+.introduce1_2 {
+    font-size: 1.8rem;
+}
+.slick-active:nth-child(2) r {
+    color: white; /*원하는 색상으로 변경*/
+}
+/*--------------content1--------------*/
+.dolgodola {
+    width : 100%;
+    height : 798px;
+    display: flex;
+}
+.bing {
+    width : 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+.dolgodola_text {
+    width : 35%;
+    height : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+    text-align: center;
+    margin-left : 80px;
+ }
+ 
+.content1_text1 {
+    position : relative;
+    margin-right: 80px;
+    
+}
+.content2_text2 {
+    position : relative;
+    margin-right: 80px;
+}
+.dolgodola_function {
+    width : 30%;
+    height : 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+
+/* .bbq_text {
+    color : #8A8686;
+    margin-bottom: 64px;
+} */
+
+/*chat1*/
+/* .chat1_bbq {
+    color : #8A8686;
+}
+.chat1_pool {
+    color : #8A8686;
+}
+.chat1_play {
+    color : #8A8686;
+} */
+.chat1 {
+    margin-bottom : 30px;
+}
+.chat3 {
+    margin-top : 30px;
+}
+
+/*chat2*/
+
+.chat2_bbq {
+    color : #FFE500;
+    margin-top :10px;
+}
+.chat2_pool {
+    color : #FFE500;
+    margin-top : 10px;
+}
+.chat2_play {
+    color : #FFE500;
+    margin-top : 10px;
+}
+.chat2_play {
+    color : #FFE500;
+    margin-top : 10px;
+}
+
+/*chat3*/
+/* .chat3_bbq {
+    color : #8A8686;
+}
+.chat3_pool {
+    color : #8A8686;
+}
+.chat3_play {
+    color : #8A8686;
+} */
+/**/
+.play {
+    color : #8A8686;
+    margin-top : 64px;
+}
+.bar1 {
+    width : 184px;
+    height : 1px;
+    background-color: #000;
+    position: relative;
+    margin-bottom : 40px;
+    margin-left : 190px;
+}
+.bar2 {
+    width : 184px;
+    height : 1px;
+    background-color: #000;
+    position: relative;
+    margin-top : 20px;
+    margin-left : 190px;
+}
+.content1_image {
+    width : 35%;
+    height : 100%;
+    display: flex;
+    align-items: center; 
+    margin-top : 220px;
+    margin-left : 30px;
+
+}
+.chat2 div { 
+    margin-bottom: 20px; /* 아래쪽 여백 추가 */ 
+}
+.c {
+    width : 213px;
+    height : 367px;
+    position : relative;
+    margin-left: 80px;
+}
+.img1, .img2, .img3, .img4, .img5 {
+    width : 100%;
+    height : 450px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+/* b.css 파일 */
+
+
+
+/*--------------content2--------------*/
+
+/*firth*/
+.first {
+    width : 100%;
+    height: 680px;
+    display: flex;
+}
+.left-first {
+     width : 50%;
+    height : 100%;
+    display: flex;
+    flex-direction : column;
+}
+
+.right-first {
+    width : 50%;
+    height : 100%;
+}
+.p1 {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1 {
+    justify-content: center;
+    margin-bottom : 90px;
+}
+ .first_text {
+    color : #FFE500;
+    width : 88%;
+    height : 80px;
+    text-align: left;
+    display: flex;
+    justify-content: end;
+    margin-top : 50px;
+}
+/*second*/
+.second {
+    width : 100%;
+    height: 680px;
+    display: flex;
+
+}
+.left-second {
+    width : 50%;
+    height : 100%;
+
+}
+.right-second {
+    width : 50%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img2 {
+    justify-content: center;
+    margin-bottom : 90px;
+    margin-bottom : 10px;
+}
+.p2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.second_text {
+    color : #FFE500;
+    width : 77%;
+    height : 80px;
+    text-align: right;
+    display: flex;
+    justify-content: start;
+    margin-top : 85px;
+   
+}
+/*third*/
+.third {
+    width : 100%;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+}
+.left-third {
+    width : 50%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-third {
+    width : 50%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p3 {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gym_text {
+    margin-top : 80px;
+    width : 77%;
+}
+.img3 {
+    justify-content: center;
+    align-items: center;
+    margin-bottom : 45px;
+}
+
+/*fourth*/
+.fourth {
+    width : 100%;
+    height: 680px;
+    display: flex;
+}
+.left-fourth {
+    width : 50%;
+    height : 100%;
+}
+.right-fourth {
+    width : 50%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*fifth*/
+.fifth {
+    width : 100%;
+    height: 680px;
+    display: flex;
+}
+.left-fifth {
+    width : 50%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right-fifth {
+    width : 50%;
+    height : 100%;
+}
+.img5 {
+    margin-bottom : 90px;
+}
+.p5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.room_text {
+    margin-top: 85px;
+}
+
+/*--------------introduce2--------------*/
+.introduce2 {
+    margin-top : 194px;
+    height : 663px;
+    background-color: #F8F6F6;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    
+}
+.introduce2_1 {
+    margin-bottom : 10px;
+    font-size: 1.8rem;
+}
+.introduce2_2 {
+    font-size: 1.8rem;
+}
+
+/*--------------content3--------------*/
+.into_facility_pace {
+    margin-top : 281px;
+    height : 874px;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.content3 > .content3_content {
+    width : 1234px;
+    height : 100%;
+}
+.content3_text1_1, .content3_text1_2 {
+    margin-left : 10px;
+}
+.top{
+    width : 100%;
+    height : 417px;
+    display: flex;
+}
+
+.top_left {
+    width : 60%;
+    height : 100%;
+    border-radius: 20px;
+}
+.top_right {
+    width : 50%;
+    height : 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+}
+.content3_p1 {
+    width : 100%;
+    height : 100%;
+}
+.content3_p2 {
+    width : 100%;
+    height : 100%;
+}
+.content3_text2_2 {
+    margin-right : 20px;
+}
+.content3_text2_2 {
+
+}
+.content3_text2_2 {
+    color : #0C20A1;
+}
+
+.bottom1{
+    width : 100%;
+    height : 417px;
+    display: flex;
+    
+}
+.bottom1_left {
+    width : 50%;
+    height : 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+}
+.bottom1_right {
+    margin-top: 33px;
+    width : 60%;
+    height : 100%;
+    border-radius: 20px;
+    
+}
+.content3_p2 {
+    width : 100%;
+    height : 100%;
+}
+.btext1 {
+    color : #F3F3F4;
+    width: 100%;
+    height : 53px;
+    position : relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 80px;
+    margin-top: -40px;
+    letter-spacing: 3px;
+    
+}
+.btext2 {
+    color : #F3F3F4;
+    width: 100%;
+    position : relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 80px;
+    margin-top: -45px;
+    letter-spacing: 3px;
+}
+/*--------------come_guide--------------*/
+.come_guide_subtitle {
+    padding : 281px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.come_guide {
+    margin-top : 81px;
+    width : 100%;
+    height : 669px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.ct4_button {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column
+}
+.comeHere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom : 24px;
+}
+.adress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom : 58px;
+}
+.btn1 {
+    width : 650px;
+    height : 70px;
+    background-color: #ffe500;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn1_img {
+    
+}
+.btn2 {
+    width : 650px;
+    height : 70px;
+    background-color: #6eb0fb;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+.btn2_img {
+    margin-right : 35px;
+}
+.btn2 > .btn_call {
+    margin-right : 50px;
+}
+.map_api {
+    width: 50%;
+    height: 669px;
+    display: flex;
+    justify-content: center;
+}
+.api {
+    width : 719px;
+    height : 669px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn3 {
+    width : 718px;
+    height : 70px;
+    background-color: #ffe500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top : 60px;
+}
+
+/*-------------footer--------------*/
+.footer-content {
+    margin-top : 215px;
+}
+
+.rd {
+    border-radius: 10px;
+}
+
+
+.carousel {
+    max-width : 600px;
+    
+    margin: auto;
+}
+    
+
+
+@font-face {
+    font-family: 'Jua';
+    src: url('C:\Users\ssemi\OneDrive\바탕 화면\개미친\Jua') format('woff3');
+    font-display: block;
+}
+@media screen and (max-width : 580px) { 
+    
+    .mainFont1 {
+        font-size : 3em;
+        margin-top : 50px;
+        margin-left : 30px;
+        width : 500px;
+    }
+    .mainFont2 {
+        font-size : 3em;
+        margin-top : 10px;
+        margin-left : 30px;
+    }
+    .mainFont3 {
+        font-size : 1em;
+        margin-left : 13px;
+        margin-top : -20px;
+    }
+    
+    
+    .introduce1, .introduce2 {
+        height : 300px;
+    }
+    .introduce1_1, .introduce1_2, .introduce2_1, .introduce2_2 {
+        font-size : 15px;
+    }
+    .dolgodola {
+        /* height : 500px; */
+        margin-left : -30px;
+    }
+    .dolgodola_function {
+        margin-left : 270px;
+        margin-top : -220px;
+    }
+    .content1_text1 {
+        font-size : 15px;
+        margin-top : -250px;
+        margin-right : -130px;
+    }
+    .content2_text2 {
+        font-size : 15px;
+        margin-right : -130px;
+    }
+    .chat2_bbq, .chat2_play, .chat2_pool {
+        font-size : 20px;
+        margin-left : 70px;
+        width : 230px;
+    }
+
+    .c {
+        width : 50px;
+        height : 80px;
+    }
+    .bar1, .bar2 {
+        height : 1px;
+        margin-left : -100px;
+    }
+    .bar2 {
+        margin-top : -20px;
+    }
+    .chat2 {
+        margin-top: -20px;
+        margin-left : -200px;
+        width : 300px;
+    }
+    .content1_image {
+        margin-top: 190px;
+        margin-left : -100px;
+    }
+    .first {
+        height : 350px;
+    }
+    .second {
+        height : 350px;
+    }
+    .third {
+        height : 350px;
+    }
+    .fourth {
+        height : 350px;
+    }
+    .fifth {
+        height : 350px;
+    }
+
+    .left-fifth {
+        height : 60px;
+    }
+    .right-fifth {
+        height : 60px;
+    }
+    .f_swimming {
+        font-size: 16px;
+    }
+    .img1 {
+        padding : 0px 0px 0px 30px;
+        margin-top : -350px;
+    }
+    .img2 {
+        padding : 0px 30px 0px 0px;
+        margin-top : -330px;
+    }
+    .img3 {
+        padding : 0px 0px 0px 30px;
+        margin-top : -120px;
+    }
+    
+    .img4 {
+        padding : 0px 30px 0px 0px;
+        margin-top : -175px;
+    }
+    .img5 {
+        padding : 0px 0px 0px 30px;
+        margin-top : -115px;
+    }
+    .swimming_text {
+
+    }
+    .barbeque_text {
+        margin-top : -500px;
+    }
+    .junglegym_text {
+
+    }
+    .playground_text {
+
+    }
+    .livingroom_text {
+
+    }
+    .content2 {
+        margin-top : -250px;
+    }
+    /*4면 콘텐츠*/
+    .into_facility_pace {
+        height : 350px;
+    }
+    .top, .bottom, .bottom1 {
+        height : 150px;
+    }
+    
+    .content3_p1, .content3_p2 {
+        width : 210px;
+    }
+    .content3_p1 {
+        padding : 0px 0px 0px 30px;
+    }
+    .content3_p2 {
+        padding : 0px 30px 0px 0px;
+    }
+    .content3_text1_1, .content3_text1_2 {
+        font-size: 15px;
+        padding : 0px 50px 0px 0px;
+    }
+    .content3_text2_1, .content3_text2_2 {
+        font-size: 13px;
+        width : 200px;
+        padding : 0px 0px 0px 10px;
+    }
+    
+    .content3_text2_1 {
+        padding : 50px 0px 0px 0px;
+    }
+    .btext1, .btext2 {
+        font-size : 50px;
+    }
+    .top_left {
+        height : 150px;
+    }
+    .top_right {
+        height : 150px;
+    }
+    .bottom1_left {
+        height : 150px;
+    }
+    .bottom1_right {
+        height : 150px;
+    }
+   
+    .btext1 {
+        display : none;
+    }
+    .btext2 {
+        display: none;
+    }
+    /*오시는 길 안내 */
+    
+    .come_guide {
+        height : 500px;
+    }
+    .come_guide_subtitle {
+        font-size: 16px;
+        padding : -280px 0px 0px 0px;
+        margin-bottom : 40px;
+    }
+    .come_text {
+        font-size: 16px;
+    }
+    .comeHere {
+        padding : 0px 0px 0px 30px;
+        font-size: 13px;
+        margin-top : -460px;
+    }
+    .adress {
+        padding : 0px 0px 0px 30px;
+        font-size: 13px;
+        margin-top : -440px;
+        width : 300px;
+    }
+    .ct4_button {
+        height : 0px;
+    }
+    .map_api {
+        height : 300px;
+    }
+    iframe {
+        width : 200px;
+        height : 200px;
+        padding : 0px 30px 0px 0px;
+        margin-top: -200px;
+    }
+    
+    .btn1, .btn2 {
+        width : 200px;
+        height : 30px;
+        padding : 0px 0px 0px 0px;
+    }
+    .btn1 {
+        margin-top: -400px;
+    }
+    .btn2 {
+        margin-top : -360px;
+    }
+
+    .kakao, .call {
+        width : 15px;
+        height :15px;
+    }
+    .btn_kakao, .btn_call {
+        font-size: 10px;
+        /* width : 100px; */
+    }
+    
+    /*이거 고정 너비 풀어주던가 풀고 상대단위 쓰던가 미디어쿼리써서 고정적일떄마다? 절대적 값 줘서 너비 줄이는 등 수정
+    */
+    /*마진 값으로 설정값에서 넘어선 듯 머물다 폰트사이즈 줄여보기 마진 대신 패딩으로 줘보기
+    머물다 특정 너비 도달하면 display none 줘도 ㄱㅊ 미디어쿼리에서 580이하에서는 안보이게
+    최소로 줄이면 면이랑 요소가 닿으니까 패딩 섹션으로 패딩 30px정도 줘보기 
+    네비게이션바에서 머물다키즈풀빌라 왼쪽 여백 30px정도 남기기*/
+    .footer-content {
+        margin-top : -120px;
+    }
+}
+@media screen and (max-width : 1080px) { 
+    
+}
