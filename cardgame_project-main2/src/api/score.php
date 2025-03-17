@@ -1,7 +1,6 @@
 <?php
 
 require 'db.php';
-var_dump($checkStmt);
 
 // 요청 방식 확인 (POST)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
