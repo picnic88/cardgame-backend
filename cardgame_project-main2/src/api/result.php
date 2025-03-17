@@ -23,8 +23,10 @@
     //닉네임 중복X
     $query = "insert into users(nickname, score) values ('$nickname',0)";
     
-    echo "false";
-    exit();
+    if (mysqli_query($conn, $query)) {
+      echo "false";
+      exit();
+    }
   }
 
   //DB연결 종료
