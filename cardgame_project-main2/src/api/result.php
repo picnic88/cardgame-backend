@@ -9,23 +9,19 @@
 
   //DB 쿼리
 
-  $query = "SELECT * FROM users WHERE 닉네임 = '$nickname'";
-  //  $query = "insert into cardgame values ('$nickname')";
-  // 실행
+  $query = "SELECT * FROM users WHERE nickname = '$nickname'";
+
   $result = mysqli_query($dbcon, $query);
 
   // 결과 확인
   if (mysqli_num_rows($result) > 0) {
-    //닉네임 중복O
-    //   header("Location: MarsProject.html");
-    // echo "<script>alert('동일한 닉네임이 존재합니다.')</script>";
     echo "<script>
               alert('동일한 닉네임이 존재합니다.');
             </script>";
       exit();
   } else {
     //닉네임 중복X
-    $query = "insert into users(닉네임,점수) values ('$nickname',0)";
+    $query = "insert into users(nickname, score) values ('$nickname',0)";
 
     if (mysqli_query($dbcon, $query)) {
       exit();
@@ -35,5 +31,4 @@
 
   //DB연결 종료
   mysqli_close($dbcon);
-  // echo "PHP 실행 확인";
 ?>
