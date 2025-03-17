@@ -9,12 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nickname = isset($_POST['nickname']) ? $_POST['nickname'] : '';
 
     // 닉네임 존재 확인
-    $checkQuery = "SELECT * FROM users WHERE 닉네임 = '$nickname'";
+    $checkQuery = "SELECT * FROM users WHERE nickname = '$nickname'";
     $result = $conn->query($checkQuery);
 
     if ($result->num_rows > 0) {
         // 닉네임 있으면 점수 업데이트
-        $updateQuery = "UPDATE users SET 점수 = $score WHERE 닉네임 = '$nickname'";
+        $updateQuery = "UPDATE users SET score = $score WHERE nickname = '$nickname'";
         if ($conn->query($updateQuery) === TRUE) {
             echo "✅ 점수 업데이트 성공!";
         } else {
