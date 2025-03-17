@@ -17,7 +17,7 @@
   if (mysqli_num_rows($result) > 0) {
     //닉네임 중복O
     // true 값 반환
-    echo json_encode(array("status" => true));
+    echo "true";
     exit();
   } else {
     //닉네임 중복X
