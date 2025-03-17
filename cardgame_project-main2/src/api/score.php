@@ -11,15 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 닉네임 존재 확인
     $checkQuery = "SELECT * FROM users WHERE 닉네임 = '$nickname'";
-    $result = $dbcon->query($checkQuery);
+    $result = $conn->query($checkQuery);
 
     if ($result->num_rows > 0) {
         // 닉네임 있으면 점수 업데이트
         $updateQuery = "UPDATE users SET 점수 = $score WHERE 닉네임 = '$nickname'";
-        if ($dbcon->query($updateQuery) === TRUE) {
+        if ($conn->query($updateQuery) === TRUE) {
             echo "✅ 점수 업데이트 성공!";
         } else {
-            echo "❌ 점수 업데이트 실패: " . $dbcon->error;
+            echo "❌ 점수 업데이트 실패: " . $conn->error;
         }
     } else {
         echo "❌ 닉네임을 찾을 수 없습니다.";
@@ -27,5 +27,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // DB 연결 종료
-$dbcon->close();
+$conn->close();
 ?>
