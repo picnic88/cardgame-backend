@@ -1,8 +1,7 @@
 <?php
-$dbcon = new mysqli('localhost', 'root', 'jungwon04^^', 'n');
 
+require 'db.php';
 var_dump($checkStmt);
-
 
 // 요청 방식 확인 (POST)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,12 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nickname = isset($_POST['nickname']) ? $_POST['nickname'] : '';
 
     // 닉네임 존재 확인
-    $checkQuery = "SELECT * FROM n.cardgame WHERE 닉네임 = '$nickname'";
+    $checkQuery = "SELECT * FROM users WHERE 닉네임 = '$nickname'";
     $result = $dbcon->query($checkQuery);
 
     if ($result->num_rows > 0) {
         // 닉네임 있으면 점수 업데이트
-        $updateQuery = "UPDATE n.cardgame SET 점수 = $score WHERE 닉네임 = '$nickname'";
+        $updateQuery = "UPDATE users SET 점수 = $score WHERE 닉네임 = '$nickname'";
         if ($dbcon->query($updateQuery) === TRUE) {
             echo "✅ 점수 업데이트 성공!";
         } else {
